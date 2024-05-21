@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <>
       <Card className="flex items-center justify-between p-[1.875rem]">
         <Sheet>
           <SheetTrigger asChild>
@@ -71,7 +71,7 @@ const Header = () => {
               </>
             ) : (
               <div>
-                <h3 className="text-sm mt-6">Olá, seja bem-vindo</h3>
+                <h3 className="mt-6">Olá, seja bem-vindo</h3>
                 <Button
                   onClick={handleLoginClick}
                   variant="outline"
@@ -84,11 +84,6 @@ const Header = () => {
             )}
 
             <div className="mt-2 flex flex-col gap-2">
-              {/* <Button variant="outline" className="w-full justify-start gap-3">
-                <HomeIcon size={16} />
-                Inicio
-              </Button> */}
-
               <Button variant="outline" className="w-full justify-start gap-3">
                 <PercentIcon size={16} />
                 Ofertas
@@ -102,17 +97,14 @@ const Header = () => {
           </SheetContent>
         </Sheet>
 
-        <h1 className="text-lg font-semibold text-primary">Store</h1>
+        <h1 className="text-xl font-semibold text-primary">Store</h1>
 
         <Button size="icon" variant="outline">
           <ShoppingCartIcon />
         </Button>
       </Card>
-    </div>
+    </>
   );
 };
 
 export default Header;
-function useAuth(): { data: any } {
-  throw new Error("Function not implemented.");
-}
