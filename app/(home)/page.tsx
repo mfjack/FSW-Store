@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Categories from "./_components/categories";
 
 const Home = () => {
   return (
@@ -10,6 +11,10 @@ const Home = () => {
         height={0}
         className="h-full w-full"
       />
+
+      <div className="mt-6">
+        <Categories />
+      </div>
     </div>
   );
 };
