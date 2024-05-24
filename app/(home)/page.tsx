@@ -27,8 +27,17 @@ const Home = async () => {
       </div>
 
       <div className="mt-6">
+        <p className="mb-2 pl-5 font-bold">OFERTAS</p>
         <ProductList products={deals} />
       </div>
+
+      <Image
+        src="/banner-03.svg"
+        alt="até 55% de desconto em mouses"
+        width={0}
+        height={0}
+        className="h-full w-full px-5"
+      />
     </div>
   );
 };
