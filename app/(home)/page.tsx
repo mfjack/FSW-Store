@@ -32,7 +32,7 @@ const Home = async () => {
   });
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 py-8">
       <PromoBanner src="/banner-01.svg" alt="até 55% de desconto só esse mês" />
 
       <div className="px-5">
