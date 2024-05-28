@@ -1,19 +1,30 @@
 import { db } from "@/app/_lib/prisma";
+import ProductImage from "./_components/product-image";
 
 interface ProductDetailsPageProps {
-   params: {
-      slug: string
-   }
+  params: {
+    slug: string;
+  };
 }
 
-const ProductDetailsPage = async ({params: {slug}}: ProductDetailsPageProps) => {
-   const product = await db.product.findFirst({
-      where: {
-         slug: slug
-      }
-   })
+const ProductDetailsPage = async ({
+  params: { slug },
+}: ProductDetailsPageProps) => {
+  const product = await db.product.findFirst({
+    where: {
+      slug: slug,
+    },
+  });
 
-   return ( <h1>{product?.name}</h1> );
-}
- 
+  if (!product) {
+    return null;
+  }
+
+  return (
+    <>
+      <ProductImage imageUrls={product.imageUrls} name={product.name} />
+    </>
+  );
+};
+
 export default ProductDetailsPage;
