@@ -81,9 +81,9 @@ const ProductInfo = ({
           <div className="flex flex-col">
             <p className="text-xs">
               Entrega via <span className="font-bold">Packet</span>
-              <p className="text-xs text-[#8162ff]">
-                Envio para <span className="font-bold">todo Brasil</span>
-              </p>
+            </p>
+            <p className="text-xs text-[#8162ff]">
+              Envio para <span className="font-bold">todo Brasil</span>
             </p>
           </div>
         </div>

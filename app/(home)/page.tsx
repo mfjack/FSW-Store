@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Categories from "./_components/categories";
-import ProductList from "./_components/product-list";
+import ProductList from "../_components/product-list";
 import { db } from "../_lib/prisma";
 import { title } from "process";
-import SectionTitle from "./_components/section-title";
+import SectionTitle from "../_components/section-title";
 import PromoBanner from "./_components/promo-banner";
 
 const Home = async () => {

@@ -2,7 +2,7 @@ import { Product } from "@prisma/client";
 import Image from "next/image";
 import { ProductWithTotalPrice } from "../_helpers/product";
 import { Badge } from "./ui/badge";
-import { ArrowDown } from "lucide-react";
+import { ArrowDownIcon } from "lucide-react";
 import Link from "next/link";
 
 interface ProductItemProps {
@@ -24,7 +24,7 @@ const ProductItem = ({ product }: ProductItemProps) => {
 
         {product.discountPercentage > 0 && (
           <Badge className="absolute left-2 top-2 px-2">
-            <ArrowDown size={14} />
+            <ArrowDownIcon size={14} />
             {product.discountPercentage}%
           </Badge>
         )}
