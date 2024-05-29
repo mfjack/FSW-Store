@@ -1,5 +1,7 @@
 import { db } from "@/app/_lib/prisma";
 import ProductImage from "./_components/product-image";
+import ProductInfo from "./_components/product-info";
+import { computeProductTotalPrice } from "@/app/_helpers/product";
 
 interface ProductDetailsPageProps {
   params: {
@@ -23,6 +25,7 @@ const ProductDetailsPage = async ({
   return (
     <>
       <ProductImage imageUrls={product.imageUrls} name={product.name} />
+      <ProductInfo product={computeProductTotalPrice(product)} />
     </>
   );
 };
