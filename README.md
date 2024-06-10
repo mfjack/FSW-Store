@@ -1,4 +1,4 @@
-# Food
+# Store
 
 É uma plataforma e-commerce de periféricos.
 
