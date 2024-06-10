@@ -19,7 +19,9 @@
 
 ```bash
   yarn ou npm instalado
-```## Rodando localmente
+```
+
+## Rodando localmente
 
 Clone o projeto
 
