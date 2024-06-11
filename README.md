@@ -53,6 +53,10 @@ Abra seu navegador e acesse
  http://localhost:3000
 ```
 
+##Deploy
+
+https://jack-store.vercel.app
+
 ## Suporte
 
 Para suporte, mande um email para ferreira.marlon@live.com.
