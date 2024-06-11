@@ -39,26 +39,28 @@ const Cart = () => {
         </ScrollArea>
       </div>
 
-      <div className="flex flex-col gap-3">
-        <div className="flex items-center justify-between text-xs">
-          <p>Subtotal:</p>
-          <p>R$ {subTotal.toFixed(2)}</p>
-        </div>
-        <div className="flex items-center justify-between text-xs">
-          <p>Entrega</p>
-          <p>Grátis</p>
-        </div>
-        <div className="flex items-center justify-between text-xs">
-          <p>Total de Desconto:</p>
-          <p>R$ {totalDiscount.toFixed(2)}</p>
-        </div>
-        <div className="flex items-center justify-between text-xs">
-          <p>Total:</p>
-          <p>R$ {total.toFixed(2)}</p>
-        </div>
+      {products.length > 0 && (
+        <div className="flex flex-col gap-3">
+          <div className="flex items-center justify-between text-xs">
+            <p>Subtotal:</p>
+            <p>R$ {subTotal.toFixed(2)}</p>
+          </div>
+          <div className="flex items-center justify-between text-xs">
+            <p>Entrega</p>
+            <p>Grátis</p>
+          </div>
+          <div className="flex items-center justify-between text-xs">
+            <p>Total de Desconto:</p>
+            <p>R$ {totalDiscount.toFixed(2)}</p>
+          </div>
+          <div className="flex items-center justify-between text-xs">
+            <p>Total:</p>
+            <p>R$ {total.toFixed(2)}</p>
+          </div>
 
-        <Button className="font-bold uppercase mt-5">Finalizar </Button>
-      </div>
+          <Button className="mt-5 font-bold uppercase">Finalizar </Button>
+        </div>
+      )}
     </div>
   );
 };
