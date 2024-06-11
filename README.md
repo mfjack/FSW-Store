@@ -53,7 +53,7 @@ Abra seu navegador e acesse
  http://localhost:3000
 ```
 
-##Deploy
+## Deploy
 
 https://jack-store.vercel.app
 
