@@ -2,7 +2,7 @@
 
 É uma plataforma e-commerce de periféricos.
 
-![image](https://github.com/mfjack/fsw-store/assets/105893969/4e08e081-c037-4128-91df-5f05bcbb1c13)
+![Home](https://github.com/mfjack/fsw-store/assets/105893969/99db1c2f-5b09-49f7-9b84-410ddd94662b)
 ![image](https://github.com/mfjack/fsw-store/assets/105893969/42fe23e8-dd3c-41f5-8fb3-bec193e2fcad)
 
 ## Stack utilizada
